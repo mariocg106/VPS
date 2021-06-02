@@ -10,7 +10,7 @@ require __DIR__ . '/../../vendor/autoload.php';
 
 // creamos la aplicación php
 $app = AppFactory::create();
-$app->setBasePath("/Libreria/apilibreria/public/index.php");
+$app->setBasePath("/apilibreria/public/index.php");
 $app->get("/hello", function(Request $request, Response $response, $args) {
     $response->getBody()->write("Hello world!");
     return $response;
