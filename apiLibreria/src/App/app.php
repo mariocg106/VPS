@@ -2,6 +2,8 @@
 
 use Slim\Factory\AppFactory;
 use Slim\Exception\NotFoundException;
+use Slim\Exception\HttpNotFoundException;
+
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
 // cargamos el autoload para que pueda detectar el resto de las clases
