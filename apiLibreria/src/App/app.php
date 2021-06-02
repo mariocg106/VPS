@@ -1,7 +1,6 @@
 <?php
 
 use Slim\Factory\AppFactory;
-//use Slim\Exception\NotFoundException;
 use Slim\Exception\HttpNotFoundException;
 
 use Psr\Http\Message\ServerRequestInterface as Request;
