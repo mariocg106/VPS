@@ -1,0 +1,12 @@
+
+<ul  >
+    <li  *ngFor="let categoria of respuesta">
+       <a [routerLink]="[categoria.categoriaid, 'libros']">
+            {{ categoria.nombre_categoria }}
+        </a>  
+    </li>
+    
+  </ul>
+
+
+  

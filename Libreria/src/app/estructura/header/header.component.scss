@@ -1,0 +1,50 @@
+@media only screen and (min-width: 600px) {
+  header {
+    width: 100%;
+    background: linear-gradient(180deg, #F0A512 0%, rgba(255, 255, 255, 0) 100%), #673800;
+    display: grid;
+    grid-template-rows: 150px;
+    grid-template-columns:10% 50%  40% ;
+    grid-template-areas:
+      
+      "logo menu usuario"
+      ;
+    justify-items: stretch;
+    justify-content: center;
+  }
+
+
+}
+@media only screen and (max-width: 600px) {
+  header {
+    background-color: rgba(255,0,0,.2);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 2px;
+    padding: 5px;
+  }
+}
+
+
+header app-logo {
+  grid-area: logo;
+  display: flex;
+justify-content: center;
+align-items: center
+
+}
+header app-menu {
+  display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+header app-usuario {
+grid-area: usuario;
+margin-top: 50px;
+justify-content: center;
+align-items: center;
+
+
+}

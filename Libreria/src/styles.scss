@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+* {
+  margin:0; padding: 0; box-sizing: border-box;
+}
+
+.section-title {
+  grid-area: sec;
+  color: white;
+  padding: 5px;
+}
+
+
+.section-bread {
+  grid-area: bread;
+  color: black;
+}
+
+.section-menu {
+  
+  grid-area: menu;
+  padding: 10px;
+  background-color: rgba(0,0,0,.2);
+  border-radius: 10px;
+  min-height: 50%;
+}
+.section-menu .menu h4 {
+  font-size: 18px;
+  border-bottom: 2px solid grey;
+
+}
+.section-menu .menu ul  {
+  background-color: none !important;
+}
+
+.section-cuerpo {
+  grid-area: cuerpo;
+  min-height: 500px;
+  background-color: none;
+}
+
+.section-aside {
+  grid-area: aside;
+  background-color: orange;
+}
+

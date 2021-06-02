@@ -1,0 +1,12 @@
+<router-outlet>
+</router-outlet>
+<section >
+    <article *ngFor="let libro of respuesta">
+       <div class="nombre"><h3>{{libro.nombre_libro}}</h3></div> 
+       <div class="foto">  <img src="http://libreria.jamorgado.es/imagenes/{{libro.imagen}}"></div>
+        <div class="precio"><h4>Precio: {{ libro.precio }} </h4></div>
+        <div class="bton"><button  type="button" class="btn btn-warning">COMPRAR</button></div>
+
+        
+    </article>
+</section>
