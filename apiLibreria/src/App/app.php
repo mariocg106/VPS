@@ -8,7 +8,7 @@ use Psr\Http\Message\ResponseInterface as Response;
 // cargamos el autoload para que pueda detectar el resto de las clases
 require __DIR__ . '/../../vendor/autoload.php';
 
-
+//cote
 // creamos la aplicación php
 $app = AppFactory::create();
 $app->setBasePath("/apilibreria/public/index.php");
