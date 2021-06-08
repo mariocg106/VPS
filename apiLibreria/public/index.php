@@ -1,4 +1,4 @@
 <?php
 
 echo "public";
-require __DIR__. "/../src/App/app.php";
+//require __DIR__. "/../src/App/app.php";
