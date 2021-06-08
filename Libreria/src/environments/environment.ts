@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  URL: 'http://5.189.154.107/apiLibreria/public/index.php'
+  URL: 'http://5.189.154.107/apiLibreria/public/index.php/'
 };
 
 /*
