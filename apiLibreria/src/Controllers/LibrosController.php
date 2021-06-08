@@ -18,6 +18,9 @@ class LibrosController {
     }
 
     public function new(Request  $request, Response $response, $args){
-        echo "Insertar nuevo Libro";
+        $response->getBody()->write("libro insertado correctamente");
+        return $response
+                ->withHeader('Content-Type', 'application/json')
+                ->withStatus(200);
     }
 }
