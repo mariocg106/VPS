@@ -3,7 +3,7 @@ namespace App\Config;
 
 interface config {
     CONST DB_NAME = "libreria";
-    CONST DB_HOST = "localhost";
+    CONST DB_HOST = "5.189.154.107";
     CONST DB_PORT = "33060";
     
     CONST DB_USER = "mario";
