@@ -1,4 +1,5 @@
 <?php
+echo "model"
 namespace App\Model;
 use App\Config\DB;
 use Exception;
