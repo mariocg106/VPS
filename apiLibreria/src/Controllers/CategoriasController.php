@@ -17,10 +17,23 @@ class CategoriasController {
        
     }
 
-    public function new(Request  $request, Response $response, $args){
-        $response->getBody()->write("Categoria insertada correctamente");
+    public function new(Request $request, response $response, $args){
+        $parametros = $request->getParsedBody();
+    //    $parametros = $request->getBody()->getContents();
+        $parametros = (array)json_decode($request->getBody()->getContents());
+       // $result = UsuariosModel::new($parametros); 
+        $categoriaid = $parametros['categoriaid'];
+        $nombre = $parametros['nombre_categoria'];
+        $valores = array($categoriaid, $nombre);
+        $resultado = CategoriasModel::new($parametros);
+        $dataJson = json_encode(array(
+            'status'=> 'exit', 
+            '' => 'Registro insertado con éxito',
+            'data' => $parametros));
+        $response->getBody()->write($dataJson);
         return $response
-                ->withHeader('Content-Type', 'application/json')
-                ->withStatus(200);
+            ->withHeader('Content-Type', 'application/json')
+            ->withStatus(200);
+
     }
 }
