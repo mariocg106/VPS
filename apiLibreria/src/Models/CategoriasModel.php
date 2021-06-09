@@ -19,7 +19,7 @@ class CategoriasModel {
         //var_dump ($data->fetchAll());
     }
     public static function new($parametros){
-        echo "new"
+        echo "new";
         /*try{
             $valores = array_values($parametros);
             CategoriasModel::conexionDB();
