@@ -9,6 +9,3 @@ $app->get('/api/libros','App\Controllers\LibrosController:getAll');
     
 $app->get('/api/libros/new','App\Controllers\LibrosController:new') ;
 
-$app->get('/api/libros/new1','App\Controllers\LibrosController:new') ;
-
-$app->get('/api/libros/new2','App\Controllers\LibrosController:new') ;
