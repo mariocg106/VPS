@@ -9,8 +9,8 @@ class CategoriasController {
 
     public function getAll(Request  $request, Response $response, $args){
         $categorias = CategoriasModel::getAll();
-        $categorias_JSON = json_encode($ategorias);
-        $response->getBody()->write($ategorias_JSON);
+        $categorias_JSON = json_encode($categorias);
+        $response->getBody()->write($categorias_JSON);
         return $response
                 ->withHeader('Content-Type', 'application/json')
                 ->withStatus(200);
