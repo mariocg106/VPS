@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Models;
+echo "model"
 use App\Config\DB;
 
 class CategoriasModel {
