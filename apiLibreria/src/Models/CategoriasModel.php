@@ -1,5 +1,5 @@
 <?php
-echo "route";
+
 namespace App\Models;
 use App\Config\DB;
 
