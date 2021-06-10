@@ -23,7 +23,7 @@ class CategoriasModel {
         try{
             $valores = array_values($parametros);
             CategoriasModel::conexionDB();
-            $sql = "insert into categorias (categoriaid, nombre_categoria) 
+            $sql = "insert into categorias 
                     values (?, ?)";
             $data = CategoriasModel::$DB->run($sql, $valores);
             return "Categoria ". $parametros['nombre_categoria'] . " insertado correctamente ";
