@@ -18,10 +18,7 @@ class CategoriasController {
     }
 
     public function new(Request $request, response $response, $args){
-        $parametros = $request->getParsedBody();
         $parametros = (array)json_decode($request->getBody()->getContents());
-        $categoriaid = $parametros['categoriaid'];
-        $nombre = $parametros['nombre_categoria'];
         $valores = array($categoriaid, $nombre);
         $resultado = CategoriasModel::new($parametros);
         $dataJson = json_encode(array(
