@@ -18,8 +18,8 @@ class CategoriasController {
     }
 
     public function new(Request $request, response $response, $args){
-       // $parametros = (array)json_decode($request->getBody()->getContents());
-        $parametros = $request->getParsedBody();
+        $parametros = (array)json_decode($request->getBody()->getContents());
+       //$parametros = $request->getParsedBody();
         var_dump($parametros);
         $resultado = CategoriasModel::new($parametros);
         $dataJson = json_encode(array(
