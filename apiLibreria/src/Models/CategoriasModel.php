@@ -23,10 +23,9 @@ class CategoriasModel {
         try{
             $valores = array_values($parametros);
             CategoriasModel::conexionDB();
-            $sql = "insert into categorias (categoriaid, nombre_categoria) 
-                    values (?, ?)";
+            $sql = "insert into categorias values (?, ?)";
             $data = CategoriasModel::$DB->run($sql, $valores);
-            return "Categoria ". $parametros['nombre_categoria'] . " insertado correctamente ";
+            return "Categoria insertada correctamente ";
         }catch(Exception $e){
             return $e->getMessage();
          }
