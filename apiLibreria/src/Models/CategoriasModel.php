@@ -22,6 +22,7 @@ class CategoriasModel {
         
         try{
             $valores = array_values($parametros);
+            var_dump($valores);
             CategoriasModel::conexionDB();
             $sql = "INSERT into categorias values (?, ?)";
             $data = CategoriasModel::$DB->run($sql, $valores);

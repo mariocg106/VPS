@@ -24,7 +24,6 @@ class DB {
             ";port=".config::DB_PORT.
             ";dbname=".config::DB_NAME.
             ";charset=".config::DB_CHARSET;
-        echo $dsn;
         //se establece la conexión con la BD
         $this->pdo = new PDO($dsn, config::DB_USER, config::DB_PASSWD, $opciones);
     }
